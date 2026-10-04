@@ -24,7 +24,8 @@
     }
   },
   "scripts": {
-    "test": "phpunit",
+    "test": "php tests/run.php",
+    "test:phpunit": "phpunit",
     "test:syntax": "find src tests database routes -name '*.php' -print0 | xargs -0 -n1 php -l"
   }
 }
